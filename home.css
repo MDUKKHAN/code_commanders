@@ -1,0 +1,279 @@
+body {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    height: 2000px;
+    color: #ddd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(left, rgb(36, 223, 226),rgb(239, 12, 212),rgb(255, 218, 5));
+
+}
+
+header {
+    background-color: #cb065f;
+    padding: 20px 0;
+    text-align: center;
+    animation: slideDown 1s ease-out;
+    clear: both;
+    color: white;
+}
+
+header .hero {
+    margin-bottom: 20px;
+}
+header .hero h1{
+    color: rgb(203, 166, 0);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    position: relative;
+   margin-right: 50px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    color: #f3dc5e;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:#cb065f;
+    border-radius: 8px;
+    color: #ffffff;
+   
+   
+    float: left;
+    margin: 50px 0 0 80px;
+    
+}
+.container h1{
+    color: #e7d000;
+}
+
+
+.advantages {
+    list-style-type: none;
+    padding: 0;
+    color: #000000;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.advantages li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 30px;
+}
+
+.img_container {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.img_container img {
+    max-width: 100%;
+    border-radius: 8px;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.courses {
+    
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 20px auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+   
+   
+}
+
+.course {
+     width: 345px ;
+     background: linear-gradient(to bottom, rgb(255, 85, 0), rgb(216, 185, 6));
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+    
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+.course h2 {
+    color: #800091;
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+.course p {
+    color: #f4f4f4;
+}
+
+.enroll {
+    margin-top: 20px;
+}
+
+.enroll button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.enroll button:hover {
+    transform: scale(1.1);
+    font-size: 18px;
+    background-color: #0056b3;
+}
+
+.enroll button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+@media (max-width: 1024px) {
+    .course {
+        flex: 0 0 calc(50% - 20px); /* 2 courses per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .course {
+        flex: 0 0 100%; /* 1 course per row */
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.about-us {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+   
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #d5d2d2;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    color: #d5d2d2;
+}
+
+.about-us p, .about-us ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #d5d2d2;
+    margin-bottom: 20px;
+}
+
+.about-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-us a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.about-us a:hover {
+    text-decoration: underline;
+}
+
+.about-us .intro, .about-us .history, .about-us .mission, .about-us .values, .about-us .team, .about-us .contact, .about-us .closing {
+    margin-bottom: 20px;
+}
